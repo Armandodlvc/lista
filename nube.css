@@ -12,7 +12,6 @@ body {
     color: rgb(0, 0, 0);
 }
 
-
 .roboto-letra {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -27,13 +26,19 @@ body {
     border-radius: 20px;
     height: 80vh;
     width: 80vh;
+    padding: 20px;
 }
+.circulos{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
 .circulo-rojo{
     width: 15px;
     height: 15px; 
     background-color: #ff0000;
     border-radius: 50%; 
-
 }
 
 .circulo-amarillo{
@@ -41,7 +46,6 @@ body {
     height: 15px; 
     background-color: #ffd000;
     border-radius: 50%; 
-
 }
 
 .circulo-verde{
@@ -49,10 +53,8 @@ body {
     height: 15px;
     background-color: #00a708; 
     border-radius: 50%;
-
 }
 
 .to-do-list{
-padding: 10px;
 
 }
