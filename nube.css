@@ -28,7 +28,31 @@ body {
     height: 80vh;
     width: 80vh;
 }
+.circulo-rojo{
+    width: 15px;
+    height: 15px; 
+    background-color: #ff0000;
+    border-radius: 50%; 
+
+}
+
+.circulo-amarillo{
+    width: 15px; 
+    height: 15px; 
+    background-color: #ffd000;
+    border-radius: 50%; 
+
+}
+
+.circulo-verde{
+    width: 15px;  
+    height: 15px;
+    background-color: #00a708; 
+    border-radius: 50%;
+
+}
 
 .to-do-list{
-font-style: initial;
+padding: 10px;
+
 }
