@@ -70,14 +70,13 @@ font-size: 40px;
     height: 40px;
     border-radius: 10px;
     border-top-right-radius: 0px; 
-      border-bottom-right-radius: 0px; 
-     border: 2px solid rgb(214, 214, 214);
+    border-bottom-right-radius: 0px; 
+    border: 2px solid rgb(214, 214, 214);
 }
 
 .boton{
     width: 125px;
     font-size: 25px;
-
     color:rgb(255, 255, 255);
     background-color: rgb(21 22 27);
     border-radius: 10px;
@@ -101,3 +100,23 @@ border-right: none;
   padding: 10px 15px;
   cursor: pointer;
 }
+
+.yourtasks{
+    color:rgb(29, 29, 29);
+    font-size: 30px;
+}
+/*
+.nose{
+    display:flex
+}
+
+.delet{
+    height: 60px;
+    width: 125px;
+    font-size: 25px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(21 22 27);
+    border-radius: 10px;
+    border: 2px solid rgb(21, 22, 27);
+    cursor: pointer;
+}*/
