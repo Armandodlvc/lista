@@ -7,9 +7,9 @@ body {
     margin: 0;
 }
 
-.color {
-    
+.color{
     color: rgb(0, 0, 0);
+
 }
 
 .color2{
@@ -105,18 +105,3 @@ border-right: none;
     color:rgb(29, 29, 29);
     font-size: 30px;
 }
-/*
-.nose{
-    display:flex
-}
-
-.delet{
-    height: 60px;
-    width: 125px;
-    font-size: 25px;
-    color:rgb(255, 255, 255);
-    background-color: rgb(21 22 27);
-    border-radius: 10px;
-    border: 2px solid rgb(21, 22, 27);
-    cursor: pointer;
-}*/
