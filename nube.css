@@ -71,7 +71,7 @@ font-size: 40px;
     border-radius: 10px;
     border-top-right-radius: 0px; 
       border-bottom-right-radius: 0px; 
-     border: 2px solid rgb(214, 214, 214);*/
+     border: 2px solid rgb(214, 214, 214);
 }
 
 .boton{
@@ -84,7 +84,7 @@ font-size: 40px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-left: none;
-    border: 2px solid rgb(21, 22, 27);*/
+    border: 2px solid rgb(21, 22, 27);
 }
 
 .input-group {
@@ -92,9 +92,9 @@ font-size: 40px;
 }
 
 .input-group input {
-  flex-grow: 1; 
-  padding: 10px;
-  border-right: none; 
+flex-grow: 1; 
+padding: 10px;
+border-right: none; 
 }
 
 .input-group button {
