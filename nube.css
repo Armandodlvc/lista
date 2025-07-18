@@ -9,7 +9,7 @@ body {
 
 .color{
     color: rgb(0, 0, 0);
-
+    font-size: 25px;
 }
 
 .color2{
@@ -104,4 +104,44 @@ border-right: none;
 .yourtasks{
     color:rgb(29, 29, 29);
     font-size: 30px;
+}
+
+.task {
+  margin: 0px;
+  padding: 15px; 
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+hr {
+  border: none; 
+  height: 1px;
+  background-color: rgb(196, 196, 196);
+  margin: 0; 
+}
+
+.task-container {
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 10px;
+
+}
+
+.terminado {
+   width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(200, 200, 200); 
+  cursor: pointer;
+  border: 1px solid black;
+  display: inline-block; 
+  flex-shrink: 0; 
+}
+
+.terminadoverde {
+  background-color: rgb(0, 255, 0); 
 }
