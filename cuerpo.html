@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>lista</title>
-<link rel="stylesheet" href="nube.css">
+    <link rel="stylesheet" href="nube.css" />
     <script src="interaccion.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
-    <header></header>
-    <main>
-<div class= "cuadrado">
-
-<div class="circulos">
-    <div class="circulo-rojo"> </div>
-     <div class="circulo-amarillo"> </div>
-      <div class="circulo-verde"> </div>
-</div>
+  <header></header>
+  <main>
+    <div class="cuadrado">
+      <div class="circulos">
+        <div class="circulo-rojo"></div>
+        <div class="circulo-amarillo"></div>
+        <div class="circulo-verde"></div>
+      </div>
 
       <div class="color roboto-letra">
         <h1 class="to-do-list">To-do List</h1>
-   </div>
+      </div>
 
-<div class = "input-group">
- <input type="text"  class="cajainput" id="input" placeholder="Input">
- <button class="boton" id="boton">Add</button>
+      <form id="taskForm" class="input-group">
+        <input
+          type="text"
+          class="cajainput"
+          id="input"
+          placeholder="Input"
+          autocomplete="off"
+        />
+        <button class="boton" type="submit">Add</button>
+      </form>
+
+      <div class="color roboto-letra" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+  <p class="yourtasks" style="margin: 0;">Your Tasks</p>
+  <button id="btnEliminar" style=" padding: 8px 16px;background-color: rgb(21, 22, 27);color: white; border: none;border-radius: 8px;font-size: 16px;font-weight: 700;cursor: pointer;transition: background-color 0.3s ease;">
+    delet
+  </button>
 </div>
 
-<div class="color roboto-letra ">
-<p class="yourtasks">Your Tasks</p>
-<div id="tasks"></div>
-</div>
-  
-
-
-</div>
-    </main>
-    <footer></footer>
+      <div id="tasks"></div>
+    </div>
+  </main>
+  <footer></footer>
 </body>
 </html>

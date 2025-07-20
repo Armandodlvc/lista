@@ -1,11 +1,13 @@
-const boton = document.getElementById("boton");
+const form = document.getElementById("taskForm");
 const input = document.getElementById("input");
 const tasks = document.getElementById("tasks");
+const btnEliminarPrimera = document.getElementById("btnEliminarPrimera");
 
-boton.addEventListener("click", () => {
+form.onsubmit = function(event) {
+  event.preventDefault();
+
   const texto = input.value.trim();
   if (texto !== "") {
-
     const lineaArriba = document.createElement("hr");
     lineaArriba.style.margin = "0";
     tasks.appendChild(lineaArriba);
@@ -19,9 +21,10 @@ boton.addEventListener("click", () => {
 
     const circulo = document.createElement("div");
     circulo.classList.add("terminado");
-    circulo.addEventListener("click", () => {
+
+    circulo.onclick = function() {
       circulo.classList.toggle("terminadoverde");
-    });
+    };
 
     contenedor.appendChild(newtask);
     contenedor.appendChild(circulo);
@@ -34,4 +37,25 @@ boton.addEventListener("click", () => {
 
     input.value = "";
   }
-});
+};
+
+btnEliminar.onclick = function() {
+  const primeraTarea = tasks.querySelector(".task-container");
+
+  if (primeraTarea) {
+    const lineaArriba = primeraTarea.previousElementSibling;
+    const lineaAbajo = primeraTarea.nextElementSibling;
+
+    if (lineaArriba && lineaArriba.tagName === "HR") {
+      tasks.removeChild(lineaArriba);
+    }
+
+    if (lineaAbajo && lineaAbajo.tagName === "HR") {
+      tasks.removeChild(lineaAbajo);
+    }
+
+    tasks.removeChild(primeraTarea);
+  } else {
+    alert("No hay tareas para eliminar.");
+  }
+};
