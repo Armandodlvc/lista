@@ -1,20 +1,20 @@
 body {
-    background-color: rgb(221, 221, 221);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+   background-color: rgb(221, 221, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .color{
-    color: rgb(0, 0, 0);
-    font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
 }
 
 .color2{
-    color:rgb(214, 214, 214);
-    font-size: 20px;
+  color:rgb(214, 214, 214);
+  font-size: 20px;
 }
 
 .roboto-letra {
@@ -23,67 +23,67 @@ body {
   font-weight: 700;
   font-style: normal;
   font-variation-settings:
-    "wdth" 100;
+  "wdth" 100;
 }
 
 .cuadrado {
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    height: 80vh;
-    width: 80vh;
-    padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  height: 80vh;
+  width: 80vh;
+  padding: 20px;
 }
 .circulos{
-    display:flex;
-    flex-direction: row;
-    gap: 10px;
+  display:flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .circulo-rojo{
-    width: 15px;
-    height: 15px; 
-    background-color: #ff0000;
-    border-radius: 50%; 
+  width: 15px;
+  height: 15px; 
+  background-color: #ff0000;
+  border-radius: 50%; 
 }
 
 .circulo-amarillo{
-    width: 15px; 
-    height: 15px; 
-    background-color: #ffd000;
-    border-radius: 50%; 
+  width: 15px; 
+  height: 15px; 
+  background-color: #ffd000;
+  border-radius: 50%; 
 }
 
 .circulo-verde{
-    width: 15px;  
-    height: 15px;
-    background-color: #00a708; 
-    border-radius: 50%;
+  width: 15px;  
+  height: 15px;
+  background-color: #00a708; 
+  border-radius: 50%;
 }
 
 .to-do-list{
-font-size: 40px;
+  font-size: 40px;
 }
 
 .cajainput{
-    font-size: 20px;
-    width: 100%;
-    height: 40px;
-    border-radius: 10px;
-    border-top-right-radius: 0px; 
-    border-bottom-right-radius: 0px; 
-    border: 2px solid rgb(214, 214, 214);
+  font-size: 20px;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border-top-right-radius: 0px; 
+  border-bottom-right-radius: 0px; 
+  border: 2px solid rgb(214, 214, 214);
 }
 
 .boton{
-    width: 125px;
-    font-size: 25px;
-    color:rgb(255, 255, 255);
-    background-color: rgb(21 22 27);
-    border-radius: 10px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-left: none;
-    border: 2px solid rgb(21, 22, 27);
+  width: 125px;
+  font-size: 25px;
+  color:rgb(255, 255, 255);
+  background-color: rgb(21 22 27);
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: none;
+  border: 2px solid rgb(21, 22, 27);
 }
 
 .input-group {
@@ -91,9 +91,9 @@ font-size: 40px;
 }
 
 .input-group input {
-flex-grow: 1; 
-padding: 10px;
-border-right: none; 
+  flex-grow: 1; 
+  padding: 10px;
+  border-right: none; 
 }
 
 .input-group button {
@@ -102,8 +102,8 @@ border-right: none;
 }
 
 .yourtasks{
-    color:rgb(29, 29, 29);
-    font-size: 30px;
+  color:rgb(29, 29, 29);
+  font-size: 30px;
 }
 
 .task {
@@ -114,15 +114,8 @@ border-right: none;
   box-sizing: border-box;
 }
 
-hr {
-  border: none; 
-  height: 1px;
-  background-color: rgb(196, 196, 196);
-  margin: 0; 
-}
-
 .task-container {
-display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -132,7 +125,7 @@ display: flex;
 }
 
 .terminado {
-   width: 20px;
+  width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: rgb(255, 253, 253); 
@@ -150,6 +143,16 @@ display: flex;
   display: flex; 
   align-items: center; 
   justify-content: space-between;
-   margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.X-closer{
+border: 0px;
+background-color: rgb(255, 255, 255);
+}
+
+.borde{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 

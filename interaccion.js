@@ -1,39 +1,27 @@
 const form = document.getElementById("taskForm");
 const input = document.getElementById("input");
 const tasks = document.getElementById("tasks");
-const btnEliminarPrimera = document.getElementById("btnEliminarPrimera");
 
 form.onsubmit = function(event) {
   event.preventDefault();
 
   const texto = input.value.trim();
   if (texto !== "") {
-    const lineaArriba = document.createElement("hr");
-    lineaArriba.style.margin = "0";
-    tasks.appendChild(lineaArriba);
-
     const contenedor = document.createElement("div");
     contenedor.classList.add("task-container");
 
+//agregar las ul
     const newtask = document.createElement("ul");
     newtask.textContent = texto;
-    newtask.classList.add("task");
+    newtask.classList.add("task", "borde");
 
+// el ciculo que se vuelve verde
     const circulo = document.createElement("button");
     circulo.classList.add("terminado");
 
-    circulo.onclick = function() {
-      circulo.classList.toggle("terminadoverde");
-    };
-
-    contenedor.appendChild(newtask);
     contenedor.appendChild(circulo);
-
+    contenedor.appendChild(newtask);
     tasks.appendChild(contenedor);
-
-    const lineaAbajo = document.createElement("hr");
-    lineaAbajo.style.margin = "0";
-    tasks.appendChild(lineaAbajo);
 
     input.value = "";
   }
