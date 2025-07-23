@@ -15,11 +15,11 @@ form.onsubmit = function(event) {
     const contenedor = document.createElement("div");
     contenedor.classList.add("task-container");
 
-    const newtask = document.createElement("p");
+    const newtask = document.createElement("ul");
     newtask.textContent = texto;
     newtask.classList.add("task");
 
-    const circulo = document.createElement("div");
+    const circulo = document.createElement("button");
     circulo.classList.add("terminado");
 
     circulo.onclick = function() {
@@ -39,23 +39,3 @@ form.onsubmit = function(event) {
   }
 };
 
-btnEliminar.onclick = function() {
-  const primeraTarea = tasks.querySelector(".task-container");
-
-  if (primeraTarea) {
-    const lineaArriba = primeraTarea.previousElementSibling;
-    const lineaAbajo = primeraTarea.nextElementSibling;
-
-    if (lineaArriba && lineaArriba.tagName === "HR") {
-      tasks.removeChild(lineaArriba);
-    }
-
-    if (lineaAbajo && lineaAbajo.tagName === "HR") {
-      tasks.removeChild(lineaAbajo);
-    }
-
-    tasks.removeChild(primeraTarea);
-  } else {
-    alert("No hay tareas para eliminar.");
-  }
-};

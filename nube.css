@@ -135,7 +135,7 @@ display: flex;
    width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: rgb(200, 200, 200); 
+  background-color: rgb(255, 253, 253); 
   cursor: pointer;
   border: 1px solid black;
   display: inline-block; 
@@ -144,5 +144,12 @@ display: flex;
 
 .terminadoverde {
   background-color: rgb(0, 255, 0); 
+}
+
+.foryourtask{
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+   margin-bottom: 10px;
 }
 
