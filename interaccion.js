@@ -19,6 +19,10 @@ form.onsubmit = function(event) {
     const circulo = document.createElement("button");
     circulo.classList.add("terminado");
 
+     circulo.onclick = function() {
+      circulo.classList.toggle("terminadoverde");
+    };
+
     contenedor.appendChild(circulo);
     contenedor.appendChild(newtask);
     tasks.appendChild(contenedor);

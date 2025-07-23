@@ -114,6 +114,10 @@ body {
   box-sizing: border-box;
 }
 
+.task:hover{
+  background-color: #ececec;
+}
+
 .task-container {
   display: flex;
   justify-content: space-between;
@@ -154,5 +158,5 @@ background-color: rgb(255, 255, 255);
 .borde{
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+  margin: -1px 0;
 }
-
