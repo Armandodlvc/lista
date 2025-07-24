@@ -1,5 +1,5 @@
 body {
-   background-color: rgb(221, 221, 221);
+  background-color: rgb(221, 221, 221);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,13 +7,13 @@ body {
   margin: 0;
 }
 
-.color{
+.color {
   color: rgb(0, 0, 0);
   font-size: 25px;
 }
 
-.color2{
-  color:rgb(214, 214, 214);
+.color2 {
+  color: rgb(214, 214, 214);
   font-size: 20px;
 }
 
@@ -22,8 +22,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings:
-  "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
 .cuadrado {
@@ -33,51 +32,51 @@ body {
   width: 80vh;
   padding: 20px;
 }
-.circulos{
-  display:flex;
+.circulos {
+  display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
-.circulo-rojo{
+.circulo-rojo {
   width: 15px;
-  height: 15px; 
-  background-color: #ff0000;
-  border-radius: 50%; 
-}
-
-.circulo-amarillo{
-  width: 15px; 
-  height: 15px; 
-  background-color: #ffd000;
-  border-radius: 50%; 
-}
-
-.circulo-verde{
-  width: 15px;  
   height: 15px;
-  background-color: #00a708; 
+  background-color: #ff0000;
   border-radius: 50%;
 }
 
-.to-do-list{
+.circulo-amarillo {
+  width: 15px;
+  height: 15px;
+  background-color: #ffd000;
+  border-radius: 50%;
+}
+
+.circulo-verde {
+  width: 15px;
+  height: 15px;
+  background-color: #00a708;
+  border-radius: 50%;
+}
+
+.to-do-list {
   font-size: 40px;
 }
 
-.cajainput{
+.cajainput {
   font-size: 20px;
   width: 100%;
   height: 40px;
   border-radius: 10px;
-  border-top-right-radius: 0px; 
-  border-bottom-right-radius: 0px; 
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   border: 2px solid rgb(214, 214, 214);
 }
 
-.boton{
+.boton {
   width: 125px;
   font-size: 25px;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   background-color: rgb(21 22 27);
   border-radius: 10px;
   border-top-left-radius: 0px;
@@ -91,9 +90,9 @@ body {
 }
 
 .input-group input {
-  flex-grow: 1; 
+  flex-grow: 1;
   padding: 10px;
-  border-right: none; 
+  border-right: none;
 }
 
 .input-group button {
@@ -101,21 +100,17 @@ body {
   cursor: pointer;
 }
 
-.yourtasks{
-  color:rgb(29, 29, 29);
+.yourtasks {
+  color: rgb(29, 29, 29);
   font-size: 30px;
 }
 
 .task {
   margin: 0px;
-  padding: 15px; 
+  padding: 15px;
   display: block;
   width: 100%;
   box-sizing: border-box;
-}
-
-.task:hover{
-  background-color: #ececec;
 }
 
 .task-container {
@@ -123,40 +118,45 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-
   padding-right: 10px;
+  border-bottom: 2px solid rgb(206, 206, 206);
+}
 
+.task-container:first-child {
+  border-top: 2px solid rgb(206, 206, 206);
+}
+
+.task-container:hover {
+  background-color: #ececec;
 }
 
 .terminado {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: rgb(255, 253, 253); 
+  background-color: rgb(255, 253, 253);
   cursor: pointer;
   border: 1px solid black;
-  display: inline-block; 
-  flex-shrink: 0; 
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+#tasks {
+  padding-inline-start: 0px;
 }
 
 .terminadoverde {
-  background-color: rgb(0, 255, 0); 
+  background-color: rgb(1, 143, 1);
 }
 
-.foryourtask{
-  display: flex; 
-  align-items: center; 
+.foryourtask {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.X-closer{
-border: 0px;
-background-color: rgb(255, 255, 255);
-}
-
-.borde{
-  border-top: 2px solid rgb(206, 206, 206);
-  border-bottom: 2px solid rgb(206, 206, 206);
-  margin: -1px 0;
+.X-closer {
+  border: 0px;
+  background-color: transparent;
 }
