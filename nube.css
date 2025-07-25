@@ -131,14 +131,14 @@ body {
 }
 
 .terminado {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: rgb(255, 253, 253);
   cursor: pointer;
   border: 1px solid black;
-  display: inline-block;
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 
 #tasks {
@@ -159,4 +159,9 @@ body {
 .X-closer {
   border: 0px;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.tachar {
+  text-decoration: line-through; 
 }
